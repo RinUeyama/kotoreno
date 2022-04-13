@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "prettier"],
+  "rules": {
+    "quotes": ["warn", "single"],
+    // Cannot use next-img in SSG
+    "@next/next/no-img-element": "off"
+  }
 }

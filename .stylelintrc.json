@@ -1,0 +1,8 @@
+{
+  "plugins": ["stylelint-order"],
+  "extends": ["stylelint-config-standard", "stylelint-config-css-modules", "stylelint-config-prettier"],
+  "ignoreFiles": ["**/node_modules/**", "**/out/**", "styles/reset.css"],
+  "rules": {
+    "function-url-quotes": "never"
+  }
+}
