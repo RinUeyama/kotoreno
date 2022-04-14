@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useClientRect } from '../hooks/useClientRect';
 import styles from '../styles/Home.module.css';
-import { createPixiApp } from '../utils/pixiUtil';
 
 const Home: NextPage = () => {
   const [rect, testRef] = useClientRect();
