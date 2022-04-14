@@ -1,9 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useClientRect } from '../hooks/useClientRect';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
+  const [rect, testRef] = useClientRect();
   return (
     <div className={styles.container}>
       <Head>
@@ -22,12 +24,12 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href='https://nextjs.org/docs' className={styles.card}>
+          <a href='https://nextjs.org/docs' className={styles.card} /* ref={createPixiApp} */>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href='https://nextjs.org/learn' className={styles.card}>
+          <a href='https://nextjs.org/learn' className={styles.card} ref={testRef}>
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
