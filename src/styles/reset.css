@@ -25,20 +25,11 @@ textarea {
  * font
  */
 
-/** New Tegomin */
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-
-/** Noto Sans JP */
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Noto+Sans+JP:wght@100&display=swap');
-
-/** Shippori Mincho */
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Noto+Sans+JP:wght@100&family=Shippori+Mincho:wght@500&display=swap');
-
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-white);
-  color: var(--color-darkblue);
+  background-color: var(--color-base);
+  color: var(--color-font-base);
   font-family: 'Shippori Mincho', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-kerning: none;

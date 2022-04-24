@@ -68,25 +68,36 @@ ol li::before {
 
 /** リンク */
 a {
-  border-bottom: 1px solid var(--color-beige);
+  border-bottom: 1px solid var(--color-font-base);
   text-decoration: none;
-  outline-color: var(--color-green);
+  outline-color: var(--color-font-base);
+}
+
+a:visited {
+  border-bottom: 1px solid var(--color-font-accent);
+  outline-color: var(--color-font-accent);
 }
 
 @supports (text-decoration-skip-ink: auto) {
   a {
     border-bottom: 0;
-    text-decoration: underline solid var(--color-beige);
+    text-decoration: underline solid var(--color-font-base);
+    text-decoration-skip-ink: auto;
+  }
+
+  a:visited {
+    border-bottom: 0;
+    text-decoration: underline solid var(--color-font-accent);
     text-decoration-skip-ink: auto;
   }
 }
 
 button {
-  outline-color: var(--color-green);
+  outline-color: var(--color-sub);
 }
 
 input {
-  outline-color: var(--color-green);
+  outline-color: var(--color-sub);
 }
 
 /** 上つき文字／下つき文字 */

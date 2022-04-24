@@ -1,0 +1,14 @@
+{
+  // スペルチェックの設定
+  "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
+
+  // 保存時にautofixさせる & eslint, stylelintのautofixを有効にする
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+
+  "cSpell.words": [
+    "pixi",
+  ]
+}

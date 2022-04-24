@@ -1,8 +1,6 @@
 import * as PIXI from 'pixi.js';
 
-export const createPixiApp = (element: HTMLElement | null, options?: PIXI.IApplicationOptions) => {
-  if (element === null) return;
-
+export const createPixiApp = (element: HTMLElement, options?: PIXI.IApplicationOptions) => {
   const app = new PIXI.Application({
     width: options?.width || element.clientWidth / window.devicePixelRatio,
     height: options?.height || element.clientHeight / window.devicePixelRatio,
